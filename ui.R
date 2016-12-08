@@ -8,14 +8,14 @@ checkbox <- function(){
 }
 
 shinyUI(pageWithSidebar(
-  headerPanel("Temperature for"),
+  headerPanel("Temperature in Kiev"),
   
   sidebarPanel(
     checkboxGroupInput("year", "Select year:", checkbox())
   ),
   
   mainPanel(
-    plotOutput("plot", height = "600px")
+    plotOutput("plot")
   )
 )
 )
